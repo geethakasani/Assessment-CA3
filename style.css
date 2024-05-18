@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(162, 127, 100, 0.445);
+}
+
+header {
+    background-color: rgb(163, 99, 43);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+}
+header p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+#search-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.random-meal-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.random-meal-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.random-meal-item h3 {
+    margin-top: 0;
+}
+
+#searched-meals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.searched-meal-item {
+    background-color: #988686;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searched-meal-item img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.searched-meal-item h3 {
+    margin-top: 0;
+}
+
+#instructions {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 150, 132, 0.5);
+    display: none;
+}
+
+#instructions-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e3b88af8;
+    padding: 20px;
+    border: 2px solid #151514;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#instructions-content h2 {
+    margin-top: 0;
+}
+
+#instructions-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#instructions-content li {
+    margin-bottom: 10px;
+}
+
+#instructions-content li::before {
+    content: "•";
+    margin-right: 10px;
+}
+
